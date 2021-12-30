@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(217, 54%, 11%);
+}
+
+#container{
+  width: 30vh;
+  margin-bottom: 25px;
+  padding: 25px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  color: hsl(215, 51%, 70%);
+}
+
+#container .imgTall{
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  transition: .5s ease;
+}
+
+#container .viewImg{
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+#container:hover .imgTall{
+  opacity: 0.3;
+}
+
+#container:hover .viewImg{
+  opacity: 1;
+}
+
+#container .title{
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+#container .title:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+#container .txtContent{
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#container .contentTopInfo{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#container .contentTopInfo .left{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+#container .contentTopInfo .icon{
+  margin-right: 5px;
+}
+
+#container .contentTopInfo .TxtEth{
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+}
+
+#container .contentTopInfo .right{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+
+#container .line{
+  color: hsl(215, 32%, 27%);
+}
+
+#container .contentBottom{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#container .contentBottom .imgAvatar{
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50px;
+}
+
+#container .contentBottom .TxtAvatar{
+  color: hsl(0, 0%, 100%);
+}
+
+#container .contentBottom .TxtAvatar:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+
+
+
+.attribution{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution a {
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution a:hover{
+  color: hsl(178, 100%, 50%);
+}
