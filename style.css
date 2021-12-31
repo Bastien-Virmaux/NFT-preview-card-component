@@ -24,6 +24,7 @@ body{
   background-color: hsl(216, 50%, 16%);
   border-radius: 15px;
   color: hsl(215, 51%, 70%);
+  box-shadow: 0px 30px 0px 12px #0c1627, 0px 20px 0px 50px #0c182a;
 }
 
 #container .imgTall{
@@ -75,7 +76,6 @@ body{
 }
 
 #container .contentTopInfo{
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -104,11 +104,11 @@ body{
 }
 
 #container .line{
+  margin: 20px 0;
   color: hsl(215, 32%, 27%);
 }
 
 #container .contentBottom{
-  margin-top: 30px;
   display: flex;
   align-items: center;
 }
